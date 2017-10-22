@@ -16,6 +16,21 @@
         "js":         ["login.js"],
         "run_at": "document_end",
         "all_frames": true
+    }, {
+        "matches": [
+            "https://erp.iitkgp.ernet.in/IIT_ERP3/home.htm*", 
+            "https://erp.iitkgp.ernet.in/IIT_ERP3/menulist.htm?module_id=26",
+            "https://erp.iitkgp.ernet.in/IIT_ERP3/?ssoToken*",
+            "https://erp.iitkgp.ernet.in/IIT_ERP3/"
+        ],
+        "js":         ["proceed.js"],
+        "run_at": "document_end",
+        "all_frames": false
+    }, {
+        "matches": ["https://erp.iitkgp.ernet.in/SSOAdministration/logoutmsg.htm"],
+        "js":         ["lgpage.js"],
+        "run_at": "document_end",
+        "all_frames": false
     }],
     "background": {
       "scripts": [ "popup.js" ]
